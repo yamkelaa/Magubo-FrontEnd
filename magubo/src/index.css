@@ -1,0 +1,598 @@
+/*-----------IMPORTS----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*----------CSS RESET----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------GLOBAL STYLES----------*/
+html,
+body,
+#root {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.App > div {
+   width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 12px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+/*----------------------------VARIABLES ---------------------------*/
+:root {
+  --main-purple: blueviolet;
+  --main-font-size: 0.9rem;
+  --color-purple: #8B5CF6;
+  --color-pink: #EC4899;
+  --color-gray: #9CA3AF;
+  --color-black: #1F2937;
+  --card-size: 23rem;
+}
+
+/*--------------------------HEADER STYLES------------------*/
+header {
+  width: 100%;
+  padding: 15px 2px 15px 2px;
+  position: relative;
+  height: 13vh;
+}
+
+@media (max-width: 800px) {
+  
+
+    header {
+      height: 8vh;
+    }
+}
+
+header h1 {
+  font-size: medium;
+  color: blue;
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+}
+
+.top-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.bottom-header{
+  width: 100%;
+  border-top: 3px solid rgb(241, 238, 238);
+  margin-bottom: 0.75rem;
+}
+
+.logo-and-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo-and-icon p {
+  font-size: x-small;
+  width: 250px;
+}
+
+
+@media (max-width: 600px) {
+  .logo-and-icon p {
+    display: none;
+  }
+}
+
+.contact-and-link {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: rgb(188, 180, 180);
+}
+
+.main-navbar {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-navbar ul {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+
+
+.main-navbar ul li,
+.accounts button {
+  padding: 0.2rem;
+}
+
+
+.main-navbar ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.accounts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+
+
+button {
+  font: inherit;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+}
+
+.accounts button:nth-child(2),
+.user-actions button:nth-child(2) {
+  color: white;
+  background-color: var(--main-purple);
+}
+
+
+
+
+
+
+
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.navigation ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 20px 0px;
+}
+
+.navigation ul li a {
+  padding: 0.3rem 0.5rem;
+}
+
+.navigation ul li a:hover {
+ border-top: 2px solid blue;
+}
+
+.mobile-menu {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+  display: none;
+}
+
+.mobile-menu div {
+  height: 4px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.mobile-menu div:first-child {
+  width: 100%;
+}
+
+.mobile-menu div:nth-child(2) {
+  width: 70%;
+}
+
+.mobile-menu div:nth-child(3) {
+  width: 40%;
+}
+
+
+@media screen and (max-width : 800px) {
+
+  .navigation,
+  header>.socials-bar {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  
+
+  .navigation,
+  header>.socials-bar {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu div {
+    border-radius: 2px;
+  }
+
+  .logo-and-icon p {
+    font-weight: 400;
+  }
+}
+
+.mobile-menu-component {
+  padding: 3rem 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 90%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  gap: 1.5rem;
+}
+
+.logo-and-icon-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logo-container {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  background-image: url("../public/img/makhiwane-logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.logo-and-icon-mobile>p {
+  color: white;
+  font-size: small;
+}
+
+.mobile-menu-component>ul {
+  color: white;
+  font-size: small;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobile-menu-component>ul a {
+  color: white;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 2px;
+}
+
+.close svg {
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+@media (max-width: 653px) and (max-height: 280px) {
+
+  /* Your CSS rules for the Galaxy Fold's narrow screen */
+  header {
+    padding: 2rem 2% 2rem 0;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .logo-and-icon p {
+    font-weight: lighter;
+  }
+}
+
+/*---------USED IN MULTIPLE COMPONENTS-------*/
+
+.who-we-are {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.orange-bar {
+  width: 60px;
+  height: 2px;
+  background-color: orangered;
+}
+
+
+
+
+/*----------------CONTACT US-------------------*/
+
+#contact-us {
+  width: 98%;
+  height: 90vh;
+  position: relative;
+  font-size: small;
+
+
+
+}
+
+.get-in-touch {
+  width: 80%;
+  position: absolute;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem;
+
+}
+
+.blue {
+  background-color: lightseagreen;
+  width: 100%;
+  height: 50%;
+}
+
+.get-in-touch h3 {
+  text-align: center;
+  color: orangered;
+}
+
+.get-in-touch-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.orange-divider {
+  width: 150px;
+  height: 1.5px;
+  background-color: rgb(248, 197, 179);
+}
+
+.white {
+  background-color: rgb(229, 226, 226);
+  width: 100%;
+  height: 50%;
+  padding: 1rem;
+}
+
+.get-in-touch-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.get-in-touch-content form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.nameEmpty,
+.emailEmpty,
+.messageEmpty {
+  font-size: smaller;
+  color: red;
+}
+
+
+.get-in-touch form input,
+.get-in-touch textarea {
+  background-color: rgb(237, 235, 235);
+  font: inherit;
+  padding: 0.3rem;
+  padding-left: 0.5rem;
+
+}
+
+
+
+input,
+textarea {
+  border: 0;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.get-in-touch textarea {
+  resize: none;
+  height: 140px;
+}
+
+.links-and-map {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+  padding: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.links svg {
+  height: 15px;
+  width: 15px;
+}
+
+.links article {
+  display: flex;
+  gap: 0.5rem;
+}
+
+address {
+  font-style: normal;
+}
+
+.links-and-map .socials-bar {
+  width: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.links-and-map .socials-bar a {
+  height: 20px;
+  width: 20px;
+}
+
+.get-in-touch button {
+  color: white;
+  background-color: orangered;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.links-and-map {
+  width: 45%;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0.7rem;
+}
+
+.form-modal h3,
+.form-modal p {
+  text-align: center;
+  margin: 0.7rem 0;
+}
+
+.form-modal h3 {
+  text-transform: uppercase;
+}
+
+.form-modal p {
+  font-size: small;
+}
+
+.tick svg {
+  justify-self: center;
+  align-self: center;
+  height: 70px;
+  color: lightseagreen;
+}
+
+.tick {
+  margin: 0.7rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modal-phone {
+  justify-self: center;
+  align-self: center;
+  padding: 0.15rem;
+  color: var(--color-gray);
+  border: 1px solid var(--color-gray);
+  display: block;
+  text-align: center;
+  width: fit-content;
+}
+
+/*-------------TOAST MESSAGES----------------*/
+/* Apply Montserrat font and set the font size for toast messages */
+.Toastify__toast {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  /* Adjust the size as needed */
+}
+
+.Toastify__toast-body {
+  font-family: 'Montserrat', sans-serif;
+}
+

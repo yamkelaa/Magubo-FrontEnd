@@ -1,0 +1,159 @@
+#quotation {
+    width: 60%;
+    margin: 1.5rem 0;
+    min-height: 150px;
+    padding: 2rem;
+    background-color: rgb(245, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    width: 100%;
+}
+.heading h3 {
+    text-align: center;
+}
+.gold-bar {
+    height: 2px;
+    width: 65px;
+    background-color: #2ccc70;
+}
+
+.product-list {
+    width: 80%;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+.total {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+.products-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-top: 0.5rem;
+}
+
+.individual-product {
+    font-size: small;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.individual-product p {
+    display: flex;
+    align-items: center;
+}
+
+.price-and-remove {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-and-remove svg {
+   height: 15px;
+   width: 15px;
+   fill: #2ccc70;
+}
+
+#quotation > button {
+    background-color: rgb(4, 228, 4);
+    color: white;
+    padding: 0.5rem;
+    font-size: small;
+    border-radius: 5px;
+}
+
+.quotation-image {
+    height: 120px;
+    width: 120px;
+    background-color: rgb(226, 232, 233);
+    background-image: url("../../../../public/img/quotation.png");
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+}
+
+.quote-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    font-size: small;
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-color: aqua;
+}
+
+.quote-form > section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2ccc70;
+}
+
+.quote-form > section label {
+    background-color: aqua;
+    width: 100%;
+    color: gainsboro;
+}
+
+@media screen and (max-width : 800px) {
+    #quotation {
+        width: 90%;
+        font-size: small;
+    }
+
+    h5 {
+        font-weight: lighter;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .individual-product {
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid grey;
+        font-size: x-small;
+    }
+
+    .product-list {
+        border-bottom: 0;
+    }
+
+    #quotation > button {
+        font-size: x-small;
+    }
+}
+

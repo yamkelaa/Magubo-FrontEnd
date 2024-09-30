@@ -1,0 +1,127 @@
+/*-----------------PORTFOLIO------------------*/
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 600px;
+}
+
+#portfolio>p {
+    background: linear-gradient(45deg, #004d00, #007700, #00cc00, #66ff66, #b3ffb3, #e6ffe6, #004d00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.gallery {
+    width: 95%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    place-items: center;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+.gallery .video-container {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .image-container {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .image-container>img {
+    object-fit: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+
+.gallery article {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.gallery article h3 {
+    font-size: medium;
+    text-align: center;
+}
+
+.gallery article p {
+    font-size: small;
+    color: var(--color-gray);
+    text-align: center;
+}
+
+.gallery article a {
+    font-size: small;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(52, 210, 52);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+/*---------------------MEDIA QUERIES------------------*/
+@media screen and (max-width : 700px) {
+    #portfolio h3 {
+        font-weight: lighter;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery article {
+        min-height: 300px;
+    }
+
+    .gallery article a {
+        font-weight: lighter;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media  screen and (max-width : 800px) and (orientation : landscape) {
+    #portfolio {
+        margin-top: 0.3rem;
+    }
+    #portfolio h3 {
+            font-weight: lighter;
+        }
+        .gallery article a {
+            font-weight: lighter;
+        }
+    
+}
+

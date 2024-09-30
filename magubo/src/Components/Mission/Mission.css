@@ -1,0 +1,102 @@
+/*----------MISSION STATEMENT SECTION  -------------*/
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    min-height: 600px;
+}
+
+#mission>p {
+    color: rgb(32, 178, 42);
+}
+
+.mission-statement-container {
+    width: 95%;
+    background-color: rgb(208, 218, 221);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    grid-column-gap: 2rem;
+    place-items: center;
+    padding: 1rem;
+    min-height: fit-content;
+}
+
+.quote {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.top-section {
+    display: flex;
+    gap: 0.5rem;
+    height: 30px;
+    align-items: center;
+    font-size: small;
+}
+
+.top-section>p {
+    width: 16px;
+    color: white;
+}
+
+.top-section>div {
+    width: 15%;
+    background-color: darkblue;
+}
+
+
+.bottom-section {
+    margin-left: calc(15% + 15px + 0.5rem + 0.5rem);
+
+}
+
+.bottom-section>p {
+    font-size: 10.5px;
+    color: grey;
+}
+
+.horizontal-bar {
+    height: 1.5px;
+    width: 60px;
+    background-color: #1F2937;
+}
+
+@media screen and (max-width : 600px) {
+    #mission h3 {
+        font-weight: lighter;
+    }
+}
+@media screen and (max-width : 700px) {
+    #mission h3 {
+        font-weight: lighter;
+    }
+
+    .mission-statement-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width : 450px){
+    .mission-statement-container {
+            display: flex;
+            flex-direction: column;
+    }
+}
+
+@media  screen and (max-width : 800px) and (orientation : landscape) {
+    #mission h3 {
+            font-weight: lighter;
+        }
+}

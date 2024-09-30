@@ -1,0 +1,292 @@
+/*----------------ROOT ELEMENTS---------------*/
+:root {
+    --heading-font-size: 12px;
+    --content-font-size: 11px;
+}
+
+/*-------------LANDING PAGE STYLES-----------*/
+#landing-main {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url(../../../public/img/magubo-banner.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 1rem;
+    font-size: var(--main-font-size);
+    padding-left: 2%;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    padding-top: 2rem;
+}
+
+#landing-main h1 {
+    font-family: monospace;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 100;
+    max-width: 60%;
+    font-weight: 900;
+    opacity: 0;
+    color: white;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+        /* Element gradually becomes visible */
+    }
+}
+
+#landing-main>p {
+    max-width: 45%;
+    font-size: 13.5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.user-actions button svg {
+    height: 20px;
+    width: 20px;
+}
+
+.user-actions button:nth-child(1) {
+    background-color: white;
+}
+
+
+.search-bar button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.19);
+    gap: 3rem;
+    padding: 0.75rem;
+    font-size: smaller;
+    width: auto;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+}
+
+.categories {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.categories section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.categories section article {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.categories section select {
+    font: inherit;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.categories section article svg {
+    height: 15px;
+    width: 15px;
+}
+
+.search-bar button svg {
+    height: 25px;
+    width: 25px;
+    color: white;
+
+}
+
+.divider {
+    border-right: 1px solid black;
+}
+
+.search-bar button {
+    padding: 0.5rem;
+    background-color: greenyellow;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider-icons {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.slider-icons div {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.489);
+}
+
+
+
+.slider-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    padding: 0.3rem;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+}
+
+.slider-button svg {
+    height: 15px;
+    width: 15px;
+}
+
+.previous {
+    left: 2px;
+}
+
+.background-address-description {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.background-address-description svg {
+    height: 20px;
+    width: 20px;
+    color: rgb(85, 215, 93);
+}
+
+ .user-actions {
+     margin-bottom: 2rem;
+ }
+
+
+.slogan {
+    width: 98%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.socials-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.socials-bar>a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-bar>a img {
+    object-fit: contain;
+    height: 80%;
+    width: 80%;
+}
+
+/*------------MEDIA QUERIES----------------*/
+
+@media screen and (max-width : 800px) {
+    .categories {
+        display: none;
+    }
+
+    .search-bar {
+        background-color: rgba(255, 255, 255, 0);
+        -webkit-backdrop-filter: none;
+        backdrop-filter: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width : 700px) {
+    #landing-main {
+      justify-content: flex-end;
+    }
+
+    #landing-main h1 {
+     min-width: 100%;
+     font-size: xx-large;
+    }
+
+    #landing-main > p {
+        min-width: 100%;
+        font-size: smaller;
+        color: white;
+    }
+
+    #landing-main button {
+        font-size: smaller;
+        padding: 0.3rem;
+    }
+
+   
+
+}
+

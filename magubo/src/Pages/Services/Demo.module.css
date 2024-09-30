@@ -1,0 +1,20 @@
+.control {
+    &[data-inactive] {
+        opacity: 0;
+        cursor: default;
+    }
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: width 250ms ease;
+    background: goldenrod;
+    margin-top: 0.5rem;
+
+
+    &[data-active] {
+        width: rem(40px);
+    }
+}

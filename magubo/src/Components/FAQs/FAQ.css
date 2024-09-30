@@ -1,0 +1,10 @@
+/*--------------------FAQS----------------------*/
+#faqs,
+#contact-form {
+    width: 96%;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}

@@ -1,0 +1,75 @@
+/*------------------MISSION ARTICLE-------------------*/
+#mission-article {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    gap: 1rem;
+    min-height: 500px;
+}
+
+.mission-article-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin: 1.5rem 0;
+}
+
+.mission-article-writing-and-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 45%;
+}
+
+.mission-article-writing-and-button h3 {
+    color: lightseagreen;
+    font-size: medium;
+    margin-bottom: 0.5rem;
+}
+
+.mission-article-writing-and-button p {
+    font-size: small;
+    color: var(--color-gray);
+}
+
+.mission-article-writing-and-button>button {
+    padding: 0.5rem;
+    color: white;
+    background-color: orangered;
+    border-radius: 5px;
+    width: fit-content;
+
+}
+
+.mission-article-image {
+    width: 40%;
+    height: 350px;
+    background-image: url("../../../public/img/vision-and-mission.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+@media screen and (max-width : 800px) {
+    .mission-article-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mission-article-image {
+        width: 95%;
+    }
+
+    .mission-article-writing-and-button {
+        width: 95%;
+    }
+
+    .mission-article-writing-and-button h3 {
+        font-weight: lighter;
+    }
+}
+
