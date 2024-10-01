@@ -35,7 +35,7 @@ const  MenuMobile = () => {
   </Link>
   <Link to="/#gallery">
     <Menu.Item leftSection={<IconPhoto style={{ width: rem(14), height: rem(14) }} />}>
-      Savings Calculator
+      Savings Calculation
     </Menu.Item>
   </Link>
   <Link to="/#about-us">
