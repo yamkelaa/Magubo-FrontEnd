@@ -13,7 +13,7 @@
     justify-content: center;
     position: relative;
     background-image: url(../../../public/img/magubo-banner.png);
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     gap: 1rem;
