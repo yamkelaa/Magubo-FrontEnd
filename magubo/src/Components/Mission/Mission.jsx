@@ -4,8 +4,8 @@ import './Mission.css'
 const Mission = () => {
   return (
     <section id="mission">
-        <p>THE VALUES THAT DEFINE US</p>
-        <h3>Magubos's Mission Statement</h3>
+        <p>IN COLLABORATION WITH <a target= "blank" href="https://makhiwane-business-development.com/">MAKHIWANE BUSINESS DEVELOPMENT</a></p>
+        <h3>Makhiwanes Business Values</h3>
 
         <section className="mission-statement-container">
             {quotesArray.map((quote)=>{

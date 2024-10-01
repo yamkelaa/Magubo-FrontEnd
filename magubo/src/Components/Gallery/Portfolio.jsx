@@ -1,42 +1,99 @@
-import "./Portfolio.css"
-import { useNavigate } from 'react-router-dom'
-const Portfolio = () => {
-    const navigate = useNavigate();
+import "./Portfolio.css";
+import { useState } from "react";
+import {
+  backupSystemServices,
+  solarSystemServices,
+  offGridSystemServices,
+  businessPackages,
+  phaseSolarSystemServices
+} from "../../Pages/Services/individual-services";
+
+const allServices = [
+  ...backupSystemServices,
+  ...solarSystemServices,
+  ...offGridSystemServices,
+  ...businessPackages,
+  ...phaseSolarSystemServices,
+];
+
+const SolarSavingsCalculator = () => {
+  const [area, setArea] = useState('');
+  const [electricityCost, setElectricityCost] = useState('');
+  const [selectedProduct, setSelectedProduct] = useState('');
+  const [result, setResult] = useState('');
+
+  const calculateSavings = () => {
+    if (selectedProduct) {
+      const service = allServices.find((service) => service.id === Number(selectedProduct));
+      const savingsPercentage = parseInt(service.save, 10);
+      const monthlySavings = (electricityCost * (savingsPercentage / 100)).toFixed(2);
+      setResult(`You could save ZAR ${monthlySavings} per month with the selected product.`);
+
+      // Reset input values after calculation
+      setArea('');
+      setElectricityCost('');
+      setSelectedProduct('');
+    } else {
+      setResult("Please select a product.");
+    }
+  };
+
+  const isButtonDisabled = !area || !electricityCost || !selectedProduct;
+
   return (
-    <section id="portfolio">
-        <p>MAGUBO'S GALLERY</p>
-        <h3>Our work in action</h3>
-
-        <section className="gallery">
-            <section className="video-container">
-                <video src="./img/gallery-1.mp4" loop  controls  autoPlay  ></video>
-            </section>
-            <article className="marketing">
-                <h3>OFF-GRID SYSTEMS</h3>
-                <p>
-                Our off-grid solar systems operate independently of Eskom, offering a reliable and sustainable energy source without relying on the traditional power grid.</p>
-                <a href="#" onClick={()=>navigate("/services#services-hr")}>GET STARTED</a>
-            </article>
-            <section className="image-container">
-                <img src="./img/gallery-2.jpg" alt="Makhiwane Marketing Services" />
-            </section>
-            <section className="image-container">
-                <img src="./img/gallery-3.jpg" alt="Makhiwane Logistics Services" />
-            </section>
-            <section className="video-container">
-                <video src="./img/gallery-4.mp4"  autoPlay  loop controls></video>
-            </section>
-            <article className="marketing">
-                <h3>BACKUP SYSTEMS</h3>
-                <p>Our backup systems are engineered to seamlessly handle power outages and load shedding, ensuring uninterrupted energy supply and peace of mind during disruptions.</p>
-                <a href="#" style={{backgroundColor : "lightseagreen"}} onClick={()=>navigate("/services#services-hr")}>GET STARTED</a>
-            </article>
-             
-        </section>
-    </section>
-  )
-}
-
-export default Portfolio
+    <div className="savings-container">
+      <div className="main-form">
+        <p>Let Us Help you Save</p>
+        <div className="vertical-bar"></div>
+        <h1>Solar Savings Calculator</h1>
+        <form onSubmit={(e) => e.preventDefault()}>
+          
+            <input
+              type="text"
+              placeholder="Enter your City"
+              value={area}
+              onChange={(e) => setArea(e.target.value)}
+              required
+            />
+            <input
+              type="number"
+              value={electricityCost}
+              onChange={(e) => setElectricityCost(e.target.value)}
+              required
+              placeholder="Enter monthly spend on Electricity"
+            />
 
 
+
+            <select
+              value={selectedProduct}
+              onChange={(e) => setSelectedProduct(e.target.value)}
+              required
+            >
+              <option value="">Select a Product of Interest</option>
+              {allServices.map((service) => (
+                <option key={service.id} value={service.id}>
+                  {service.serviceName}
+                </option>
+              ))}
+            </select>
+          
+
+          <button
+            type="button"
+            onClick={calculateSavings}
+            disabled={isButtonDisabled}
+          >
+            Calculate Savings
+          </button>
+        </form>
+
+        <h2 id="result">{result}</h2>
+      </div>
+      <div className="image">
+      </div>
+    </div>
+  );
+};
+
+export default SolarSavingsCalculator;

@@ -29,8 +29,7 @@ const Header = () => {
                         </section>
 
                         <section className="contact-and-link">
-                            <p>Contact Us</p>
-                            <p>Makhiwane</p>
+                            <a href="https://makhiwane-business-development.com/"><p>Makhiwane</p></a>
                         </section>
                     </div>
 

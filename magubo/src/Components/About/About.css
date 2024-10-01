@@ -51,6 +51,10 @@
     font-size: medium;
 }
 
+.about-us-article h3 a {
+    text-decoration: underline;
+}
+
 .about-us-article p {
     font-size: small;
     color: var(--color-gray);

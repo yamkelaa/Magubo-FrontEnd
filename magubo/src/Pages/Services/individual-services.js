@@ -5,7 +5,8 @@ export const backupSystemServices = [
     serviceDescription: 'Consultation service for backup power solutions tailored to your needs. 1x48w 100ha new energy lithium battery, +accessories',
     serviceImage: './img/hr-1-min.jpg',
     servicePrice: 37000,
-    serviceCategory: 'Backup System'
+    serviceCategory: 'Backup System',
+    save: "80"
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ export const backupSystemServices = [
     serviceDescription: 'Consultation service for backup power solutions tailored to your needs, X1 5.1 lithium ion battery installation kit, Note:can run all appliances except for stove and geyser',
     serviceImage: './img/hr-2-min.jpg',
     servicePrice: 53000, // Price in ZAR
-    serviceCategory: 'Backup System'
+    serviceCategory: 'Backup System',
+    save: "60"
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ export const backupSystemServices = [
     serviceDescription: 'Consultation service for backup power solutions tailored to your needs. X1 5.1 lithium ion battery, installation kit Note:can run all appliances except for stove and geyser',
     serviceImage: './img/hr-3-min.jpg',
     servicePrice: 57800, // Price in ZAR
-    serviceCategory: 'Backup System'
+    serviceCategory: 'Backup System',
+    save: "70"
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ export const backupSystemServices = [
     serviceDescription: "Consultation service for backup power solutions tailored to your needs. A system for peace of mind during powerouts, pesky loadshedding, and unforeseen electrical events. The system is able to power fridges, TVs, Wifi, lights with an energy supply to keep only essentials afloat until power returns",
     serviceImage: './img/hr-4-min.jpg',
     servicePrice: 13500, // Price in ZAR
-    serviceCategory: 'Backup System'
+    serviceCategory: 'Backup System',
+    save: "40"
   }
 ];
 
@@ -40,7 +44,8 @@ export const solarSystemServices = [
     serviceDescription: 'Professional installation of solar systems for residential and commercial properties. 5.1kw lithium ion battery, 6x400watts mono panels, 5kva inventor, +accessories, free installation',
     serviceImage: './img/marketing-1-min.jpg',
     servicePrice: 73800,
-    serviceCategory: 'Solar System'
+    serviceCategory: 'Solar System',
+    save: "60"
   },
   {
     id: 6,
@@ -48,7 +53,8 @@ export const solarSystemServices = [
     serviceDescription: "Professional installation of solar systems for residential and commercial properties. 5.1 48v 100ah New Energy Lithium battery, 6x400wats mono solar panels, +accessories, free installation",
     serviceImage: './img/marketing-2-min.jpg',
     servicePrice: 66000, // Price in ZAR
-    serviceCategory: 'Solar System'
+    serviceCategory: 'Solar System',
+    save: "80"
   },
   {
     id: 7,
@@ -56,7 +62,8 @@ export const solarSystemServices = [
     serviceDescription: 'Professional installation of solar systems for residential and commercial properties. 48 w 48v  100ah New Energy Lithium battery, 6x400wats mono Solar panels, +accessories, free installation',
     serviceImage: './img/marketing-3-min.jpg',
     servicePrice: 75000, // Price in ZAR
-    serviceCategory: 'Solar System'
+    serviceCategory: 'Solar System',
+    save: "40"
   },
   {
     id: 8,
@@ -64,7 +71,8 @@ export const solarSystemServices = [
     serviceDescription: 'Professional installation of solar systems for residential and commercial properties. 2x5kva Luxpower inverters, 2x5.1v  4.8v 100ah lithium batteries, 12 x400wars mono solar panels, +accessories, free installation',
     serviceImage: './img/marketing-4-min.jpg',
     servicePrice: 165000, // Price in ZAR
-    serviceCategory: 'Solar System'
+    serviceCategory: 'Solar System',
+    save: "90"
   }
 ];
 
@@ -75,7 +83,8 @@ export const offGridSystemServices = [
     serviceDescription: 'Custom design of off-grid solar systems to make your home energy-independent. X1 5kw Growatt Inverter, X1 5.1 lithium ion battery, installation kit, Note: can run all your appliances except for the stove and geyser',
     serviceImage: './img/analytics-1-min.jpg',
     servicePrice: 76600,
-    serviceCategory: 'Off Grid System'
+    serviceCategory: 'Off Grid System',
+    save: "60"
   },
   {
     id: 10,
@@ -83,7 +92,8 @@ export const offGridSystemServices = [
     serviceDescription: 'Custom design of off-grid solar systems to make your home energy-independent. X1 5kw Growatt inverter, X1 4.8kw lithium ion battery, installation kit. Note:can run all appliances except for stove and geyser ',
     serviceImage: './img/analytics-2-min.jpg',
     servicePrice: 75300, // Price in ZAR
-    serviceCategory: 'Off Grid System'
+    serviceCategory: 'Off Grid System',
+    save: "40"
   },
   {
     id: 11,
@@ -91,7 +101,8 @@ export const offGridSystemServices = [
     serviceDescription: 'Custom design of off-grid solar systems to make your home energy-independent. ×5.1KW 48v 100ah, lithium ion battery, +accessories, free installation',
     serviceImage: './img/analytics-3-min.jpg',
     servicePrice: 47800, // Price in ZAR
-    serviceCategory: 'Off Grid System'
+    serviceCategory: 'Off Grid System',
+    save: "90"
   },
   {
     id: 12,
@@ -99,7 +110,8 @@ export const offGridSystemServices = [
     serviceDescription: 'Custom design of off-grid solar systems to make your home energy-independent.×1 5.1KW 48v 100ah, lithium ion battery, ×8 solar panels, +acessories, free installation',
     serviceImage: './img/analytics-4-min.jpg',
     servicePrice: 95000, // Price in ZAR
-    serviceCategory: 'Off Grid System'
+    serviceCategory: 'Off Grid System',
+    save: "60"
   }
 ];
 
@@ -110,7 +122,8 @@ export const businessPackages = [
     serviceDescription: 'Unlock excellence with our Solar Packages, featuring our solar installation services as well as the equipment itself. ×1 5KVA hybrid inverter, ×1 5.1KW 48v 100, lithium ion battery, +accessories, free installation',
     serviceImage: './img/packages-1-min.jpg',
     servicePrice: 46000, // Price in ZAR
-    serviceCategory: 'Combined Services'
+    serviceCategory: 'Combined Services',
+    save: "60"
   },
   {
     id: 14,
@@ -118,7 +131,8 @@ export const businessPackages = [
     serviceDescription: 'Unlock excellence with our Solar Packages, featuring our solar installation services as well as the equipment itself. ×1 5KVA hybrid inverter, ×1 5.1KW 48v 100, lithium ion battery, +accessories, free installation',
     serviceImage: './img/packages-2-min.jpg',
     servicePrice: 53000, // Price in ZAR
-    serviceCategory: 'Combined Services'
+    serviceCategory: 'Combined Services',
+    save: "30"
   },
    {
     id: 15,
@@ -126,7 +140,8 @@ export const businessPackages = [
     serviceDescription: "Comprehensive repair and maintenance services for all types of business equipment.",
     serviceImage: "./img/maintenance-1-min.jpg",
     servicePrice: 2500,
-    serviceCategory: "Combined Services"
+    serviceCategory: "Combined Services",
+    save: "90"
   },
   {
     id: 16,
@@ -134,7 +149,8 @@ export const businessPackages = [
     serviceDescription: "Tailored maintenance solutions to keep your facilities running smoothly and efficiently.",
     serviceImage: "./img/maintenance-2-min.jpg",
     servicePrice: 3000,
-    serviceCategory:"Combined Services"
+    serviceCategory:"Combined Services",
+    save: "50"
   }
 ];
 
@@ -145,7 +161,8 @@ export const phaseSolarSystemServices = [
     serviceDescription: 'Expert phase 1 installation service for large solar systems. X12 540w Canadian solar panels, X1 12kw DEYE Inverter, X2 5.1 lithium ion battery, installation kit. Note:can run all appliances except for stove and geyser',
     serviceImage: './img/phase1-1-min.jpg',
     servicePrice: 192200,
-    serviceCategory: 'Phase Solar System'
+    serviceCategory: 'Phase Solar System',
+    save: "60"
   },
   {
     id: 18,
@@ -153,7 +170,8 @@ export const phaseSolarSystemServices = [
     serviceDescription: 'Expert phase 1 installation service for large solar systems.',
     serviceImage: './img/logistics-2-min.jpg',
     servicePrice: 21600, // Add the actual price in ZAR
-    serviceCategory: 'Phase Solar System'
+    serviceCategory: 'Phase Solar System',
+    save: "80"
   },
   {
     id: 19,
@@ -161,7 +179,8 @@ export const phaseSolarSystemServices = [
     serviceDescription: 'Expert phase 1 installation service for large solar systems. ×1 4.8KW 48v 100ah, lithium ion battery, +accessories, free installation',
     serviceImage: './img/logistics-3-min.jpg',
     servicePrice: 33495, // Add the actual price in ZAR
-    serviceCategory: 'Phase Solar System'
+    serviceCategory: 'Phase Solar System',
+    save: "70"
   },
   {
     id: 20,
@@ -169,6 +188,8 @@ export const phaseSolarSystemServices = [
     serviceDescription: 'Expert phase 1 installation service for large solar systems. ×1 5KVA hybrid inverter, ×1 5.1KW 48v 100ah, lithium ion battery, ×8 solar panels, +accessories, free installation',
     serviceImage: './img/logistics-4-min.jpg',
     servicePrice: 75600, // Add the actual price in ZAR
-    serviceCategory: 'Phase Solar System'
+    serviceCategory: 'Phase Solar System',
+    save: "60"
+    
   }
 ];

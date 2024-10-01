@@ -11,8 +11,12 @@
     min-height: 600px;
 }
 
-#mission>p {
+#mission>p, a {
     color: rgb(32, 178, 42);
+}
+
+#mission a {
+    text-decoration: underline;
 }
 
 .mission-statement-container {

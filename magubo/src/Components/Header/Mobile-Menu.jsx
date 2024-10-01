@@ -10,7 +10,7 @@ const MobileMenu = ({mobileOpen, setMobileOpen}) => {
 
        <ul aria-label="mobile-menu navigation">
         <li><a href="">Services</a></li>
-        <li><a href="">Gallery</a></li>
+        <li><a href="">Savings Calculator</a></li>
         <li><a href="">Mission Statement</a></li>
         <li><a href="">About Us</a></li>
        </ul>

@@ -1,127 +1,111 @@
-/*-----------------PORTFOLIO------------------*/
-#portfolio {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 600px;
-}
-
-#portfolio>p {
-    background: linear-gradient(45deg, #004d00, #007700, #00cc00, #66ff66, #b3ffb3, #e6ffe6, #004d00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-}
-
-.gallery {
+.savings-container {
     width: 95%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    place-items: center;
-    background-color: black;
-    padding: 0.5rem;
-}
-
-.gallery .video-container {
-    height: 100%;
-    width: 100%;
-}
-
-.gallery .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gallery .image-container {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.gallery .image-container>img {
-    object-fit: cover;
-    object-fit: fill;
-    width: 100%;
-    height: 100%;
-}
-
-
-.gallery article {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    gap: 0.7rem;
+    margin: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    height: 400px;
+    min-height: 400px;
 }
 
-.gallery article h3 {
-    font-size: medium;
+.main-form{
+    width: 50%;
+    background-color: rgb(246, 245, 243);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-form form button {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.main-form form  input{
+ background-color: rgba(245, 245, 220, 0);
+ border-bottom: 1px solid black;
+}
+
+.main-form form select{
+    border: 0;
+    background-color: rgba(245, 245, 220, 0);
+
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+    background-image: url(/public/img/savings-image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.savings-container h1{
+    color: lightseagreen;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.vertical-bar{
+    height: 1.5px;
+    width: 120px;
+    background-color: goldenrod;
+    margin-top: 7px;
+}
+
+.main-form h2{
+    font-size: small;
     text-align: center;
 }
 
-.gallery article p {
+@media (max-width: 800px) {
+   .image {
+    display: none;
+   }
+   .main-form {
+    width: 80%;
+    height: 90%;
     font-size: small;
-    color: var(--color-gray);
-    text-align: center;
+   }
+
+   .vertical-bar {
+    margin-top: -1px;
+   }
+
+
+   .main-form input {
+    width: 90%;
+    margin: auto;
+   }
+   .main-form select {
+    width: 80%;
+    margin: auto;
+   }
+   .savings-container {
+    background-image: url(/public/img/gallery-2.jpg);
+  
+   }
+
+   .main-form h2 {
+       text-align: center;
+   }
 }
 
-.gallery article a {
-    font-size: small;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background-color: rgb(52, 210, 52);
-    padding: 0.5rem;
-    border-radius: 10px;
+@media (max-width: 600px) {
+ .main-form{
+    font-size: xx-small;
+ }
+
+ .main-form h2 {
+    font-size: xx-small;
+ }
+
 }
-
-/*---------------------MEDIA QUERIES------------------*/
-@media screen and (max-width : 700px) {
-    #portfolio h3 {
-        font-weight: lighter;
-    }
-
-    .gallery {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .gallery article {
-        min-height: 300px;
-    }
-
-    .gallery article a {
-        font-weight: lighter;
-    }
-}
-
-@media screen and (max-width : 900px) {
-    .gallery {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media  screen and (max-width : 800px) and (orientation : landscape) {
-    #portfolio {
-        margin-top: 0.3rem;
-    }
-    #portfolio h3 {
-            font-weight: lighter;
-        }
-        .gallery article a {
-            font-weight: lighter;
-        }
-    
-}
-

@@ -13,7 +13,7 @@ const Footer = () => {
         <h3>SITEMAP</h3>
         <ul className="sitemap-links">
             <li><Link to="/services#services-hr">SERVICES</Link></li>
-            <li><Link to="/#gallery">GALLERY</Link></li>
+            <li><Link to="/#gallery">SAVINGS CALCULATOR</Link></li>
             <li><Link to="/#about-us">ABOUT US</Link></li>
             <li><Link to="/#vision-mission">VISION AND MISSION</Link></li>
             <li><Link to="/#contact-us">CONTACT US</Link></li>
