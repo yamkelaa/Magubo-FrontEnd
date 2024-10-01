@@ -48,20 +48,25 @@ const SolarSavingsCalculator = () => {
         <h1>Solar Savings Calculator</h1>
         <form onSubmit={(e) => e.preventDefault()}>
           
-            <input
-              type="text"
-              placeholder="Enter your City"
-              value={area}
-              onChange={(e) => setArea(e.target.value)}
-              required
-            />
-            <input
-              type="number"
-              value={electricityCost}
-              onChange={(e) => setElectricityCost(e.target.value)}
-              required
-              placeholder="Enter monthly spend on Electricity"
-            />
+            <div className="input-container">
+  <input
+    type="text"
+    placeholder="Enter your City"
+    value={area}
+    onChange={(e) => setArea(e.target.value)}
+    required
+  />
+</div>
+<div className="input-container">
+  <input
+    type="number"
+    value={electricityCost}
+    onChange={(e) => setElectricityCost(e.target.value)}
+    required
+    placeholder="Enter monthly spend on Electricity"
+  />
+</div>
+
 
 
 
