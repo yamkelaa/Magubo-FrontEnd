@@ -29,7 +29,7 @@ const Services = () => {
 
     
       <Carousel
-      slideSize="20%"
+      slideSize="25%"
       slideGap="md"
       loop
       align="start"
@@ -51,7 +51,7 @@ const Services = () => {
       })}
     </Carousel>
       
-      <button onClick={()=> navigate("/services#services-hr", {replace : true})}>SEE ALL SERVICES →</button>
+      <button onClick={()=> navigate("/services#services-hr", {replace : true})}>SEE ALL PRODUCTS →</button>
     </section>
 
        
