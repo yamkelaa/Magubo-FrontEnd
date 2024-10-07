@@ -33,7 +33,7 @@ export const businessDevelopmentSolutions = [
   },
 {
     id: 5,
-    name: '6.5kv',
+    name: '6.5kv Solar System',
     description: 'Consultation service for backup power solutions tailored to your needs. 1x48w 100ha new energy lithium battery, +accessories',
     image: './img/hr-1-min.jpeg',
     priceZAR: 39000,
