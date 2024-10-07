@@ -5,7 +5,7 @@ const Mission = () => {
   return (
     <section id="mission">
         <p>IN COLLABORATION WITH <a target= "blank" href="https://makhiwane-business-development.com/">MAKHIWANE BUSINESS DEVELOPMENT</a></p>
-        <h3>Makhiwanes Business Values</h3>
+        <h3>Makhiwane Business Values</h3>
 
         <section className="mission-statement-container">
             {quotesArray.map((quote)=>{

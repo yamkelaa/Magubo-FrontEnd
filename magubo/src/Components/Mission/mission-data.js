@@ -8,7 +8,7 @@ export const quotesArray = [
   { id: 7, author: "TB Joshua", quote: "Yesterday is history; today is opportunity and tomorrow is mystery." },
   { id: 8, author: "TB Joshua", quote: "Today is the center of yesterday and tomorrow." },
   { id: 9, author: "TB Joshua", quote: "What you do today becomes history the next day, what are you doing today?" },
-  { id: 10, author: "Steve Jobs", quote: "Innovation distinguishes between a leader and a follower." },
+  { id: 10, author: "Steven Jobs", quote: "Innovation distinguishes between a leader and a follower." },
   { id: 11, author: "John C. Maxwell", quote: "Excellence is not a skill, it's an attitude." },
   { id: 12, author: "Robert Bosch", quote: "I rather lose money than trust." },
   { id: 13, author: "Warren Buffett", quote: "The best investment you can make is in yourself." },
